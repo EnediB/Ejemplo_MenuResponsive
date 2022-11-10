@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsive</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+    <script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>
+</head>
+<body>
+    <header class="ancho fondogris">
+        <figure class="logo">
+            <img src="imagenes/pullrequest-logo.svg" alt="">
+        </figure>
+    </header>
+    <br>
+
+    <div class="ancho">
+        <a href="#" class="barras" id="boton">
+            <i class='fas fa-bars'></i>
+        </a>
+    </div>
+
+    <section class="ancho">
+        <nav class="menu" id="cajamenu">
+            <ul>
+                <li><a href='#'>Inicio</a></li>
+                <li><a href='#'>Empresas</a></li>
+                <li><a href='#'>Servicios</a></li>
+                <li><a href='#'>Clientes</a></li>
+                <li><a href='#'>Ubicacion</a></li>
+                <li><a href='#'>Contactanos</a></li>
+            </ul>
+        </nav>
+      
+    </section>
+
+    <br>
+    <section class="ancho seccion">
+        <article class="texto">
+            <h3 class="amarillo">Creacion de Paginas Web</h3>
+            <h4>Curso basico de HTML 5 y CSS3</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui distinctio blanditiis consequuntur? Quia nihil dicta incidunt libero voluptas officia maiores eveniet, reiciendis hic unde deserunt mollitia voluptate veniam atque itaque?</p>
+            <a href="#" class="btn">Leer mas</a>
+        </article>
+
+        <figure class="imagen">
+            <img src="imagenes/foto_pullrequest.svg" alt="">
+        </figure>
+    </section>
+
+    <br>
+    <footer class="pie ancho">
+        <p>@EnediBasto</p>
+    </footer>
+
+    <br>
+
+    <script>
+        //Funcion para desplegar el menu
+        $("#boton").click(function(){
+            $("#cajamenu").slideToggle();
+        })
+    </script>
+</body> 
+</html>
